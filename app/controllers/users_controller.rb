@@ -23,7 +23,11 @@ class UsersController < ApplicationController
   end   
   
   def new
-    @user = User.new
+    #if :signed_in_user
+	#  redirect_to root_url
+	#else
+      @user = User.new
+	#end
   end
   
   def edit
